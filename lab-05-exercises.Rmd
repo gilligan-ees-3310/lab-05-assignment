@@ -1,0 +1,68 @@
+---
+title: "Lab #5 Exercises"
+subtitle: "Climate Feedbacks"
+author: "put your name here"
+date: "Lab: Feb. 22; Due: Mar. 1"
+fontsize: 12pt
+output: 
+  html_document:
+    toc: yes
+  word_document:
+    toc: yes
+  github_document:
+    toc: yes
+  pdf_document: 
+    includes:
+      in_header: ees3310.sty
+    toc: yes
+---
+```{r setup, include=FALSE}
+knitr::knit_hooks$set(inline = function(x) { knitr:::format_sci(x, 'md')})
+knitr::opts_chunk$set(echo = TRUE)
+
+if (knitr::is_latex_output()) {
+  message("Setting PDF plot hook.")
+  new_plot_hook <- function(x, options)
+    paste("\n", knitr::hook_plot_tex(x, options), "\n")
+
+  knitr::knit_hooks$set(plot = new_plot_hook)
+} else {
+  message("Not using PDF output.")
+}
+
+
+options(dplyr.summarise.inform = FALSE)
+
+# This section loads necessary R libraries and sources scripts that define
+# useful functions format_md.
+#
+data_dir = "_data"
+script_dir = "_scripts"
+
+# library(pacman)
+# p_load(tidyverse, jsonlite, httr, magrittr, scales)
+library(tidyverse)
+library(magrittr)
+library(scales)
+library(jsonlite)
+library(xml2)
+library(httr)
+
+theme_set(theme_bw(base_size = 10))
+
+source(file.path(script_dir, "utils.R"), chdir = T)
+source(file.path(script_dir, "format_md.R"), chdir = T)
+source(file.path(script_dir, "modtran.R"), chdir = T)
+source(file.path(script_dir, "rrtm.R"), chdir = T)
+```
+# Exercises with clouds and feedbacks
+
+## Exercise 1: Clouds and Infrared.
+
+_Put your code and text to answer exercise 1 (given in the lab instructions)
+here_
+
+## Exercise 2: Water Vapor Feedback
+
+_Put your code and text to answer exercise 1 (given in the lab instructions)
+here_
