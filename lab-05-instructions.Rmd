@@ -57,8 +57,6 @@ source(file.path(script_dir, "rrtm.R"), chdir = T)
 ```
 # Exercises with clouds and feedbacks
 
-# Exercises
-
 These are the exercises you will work for the lab this week.
 
 ## General Instructions

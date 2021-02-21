@@ -5,7 +5,6 @@ Lab: Feb. 22; Due: Mar. 1
 
 -   [Exercises with clouds and
     feedbacks](#exercises-with-clouds-and-feedbacks)
--   [Exercises](#exercises)
     -   [General Instructions](#general-instructions)
     -   [Exercise 1: Clouds and
         Infrared.](#exercise-1-clouds-and-infrared.)
@@ -13,8 +12,6 @@ Lab: Feb. 22; Due: Mar. 1
         Feedback](#exercise-2-water-vapor-feedback)
 
 # Exercises with clouds and feedbacks
-
-# Exercises
 
 These are the exercises you will work for the lab this week.
 
