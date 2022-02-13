@@ -12,7 +12,7 @@ There are two files for this lab.
    step by step.
 
 2. When you come to lab, you will work through the exercises, and you will
-   edit the file `lab-05-exercises.Rmd` to write your answers and show your
+   edit the file `lab-05-report.Rmd` to write your answers and show your
    work.
 
    Just as you did for the last lab, as you work through the exercises for this 
@@ -28,7 +28,7 @@ There are two files for this lab.
 * Clone a local copy of the file repository from GitHub to your
   own computer.
 * In your local repository, answer the exercises in the template
-  `lab-05-exercises.Rmd`.
+  `lab-05-report.Rmd`.
 * When you are done, knit your `.Rmd` files into PDF files.
 * Use git to commit your changes (including the edits to the `.Rmd` files
   and the new PDF files) to your local git repository.

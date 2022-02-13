@@ -1,13 +1,13 @@
-Instructions for Lab \#5
+Instructions for Lab #5
 ================
 Jonathan Gilligan
-Lab: Feb. 22; Due: Mar. 1
+Lab: Feb. 21; Due: Mar. 2
 
 -   [Exercises with clouds and
     feedbacks](#exercises-with-clouds-and-feedbacks)
     -   [General Instructions](#general-instructions)
     -   [Exercise 1: Clouds and
-        Infrared.](#exercise-1-clouds-and-infrared.)
+        Infrared.](#exercise-1-clouds-and-infrared)
     -   [Exercise 2: Water Vapor
         Feedback](#exercise-2-water-vapor-feedback)
 
@@ -89,19 +89,20 @@ important.
     emissivity of 1 (i.e., a perfect black body).
 
     Make a note of *I*<sub>down</sub> for the clear sky and with clouds.
-    (Remember that the variable `i_out` in the MODTRAN output measures
+    Remember that the variable `i_out` in the MODTRAN output measures
     the intensity of longwave radiation reaching the sensor. In this
     exercise, the sensor is on the ground looking up, so `i_out`
-    measures the downward radiation reaching the ground.)
+    measures the downward radiation reaching the ground, which is how
+    the greenhouse effect heats the ground.
 
     Plot the spectra for both cases and also compare *I*<sub>down</sub>.
 
-    -   What part of the spectrum is most affected by clouds? (Answer
+    -   What part of the spectrum is most affected by clouds? Answer
         both in terms of what ranges of wavelengths or wavenumbers are
         affected, and also what name we give to this part of the
-        spectrum).
+        spectrum.
     -   On a winter night in Nashville, would it be colder if the sky is
-        clear or if it’s cloudy?
+        clear or if it’s cloudy? Why?
 
 4.  Now set `clouds` to `"none"`, and keep the sensor altitude at 0 km
     (`altitude_km = 0`) looking up (`looking = "up"`).
@@ -125,8 +126,8 @@ important.
         how does water vapor change the spectrum you see from the
         ground?
 
-        -   Does it make the longwave radiation brighter (warmer) or
-            dimmer (cooler)?
+        -   Does it make the longwave radiation that heats the ground
+            brighter (warmer) or dimmer (cooler)?
             -   Why do you think this is?
 
 ## Exercise 2: Water Vapor Feedback
@@ -145,8 +146,9 @@ atmosphere.
     then paste the new surface temperature into your R code).
 
     The change in surface temperature between the 400 ppm CO<sub>2</sub>
-    and 800 ppm CO<sub>2</sub> (*Δ**T*<sub>2 × CO<sub>2</sub></sub>)
-    runs is the **climate sensitivity**. What is it?
+    and 800 ppm CO<sub>2</sub> runs is the **climate sensitivity**
+    (*Δ**T*<sub>2 × CO<sub>2</sub></sub>) in the presence of water-vapor
+    feedback. What is it?
 
 2.  Now run the RRTM model again, with 400 ppm CO<sub>2</sub>, but this
     time setting `relative_humidity = 0` (this turns off the water vapor
@@ -163,7 +165,9 @@ atmosphere.
     feedback) and part (b) (without water-vapor feedback). The
     amplification factor for the water-vapor feedback is the ratio of
     the climate sensitivity with water-vapor feedback to the sensitivity
-    without the feedback. What is the amplification factor?
+    without the feedback. What is the amplification factor (the ratio of
+    the climate sensitivity with water-vapor feedback to the sensitivity
+    without the feedback)?
 
 In your write-up, discuss how including the water vapor feedback changes
 the way that CO<sub>2</sub> affects the climate.
